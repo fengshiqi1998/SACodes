@@ -2,8 +2,8 @@ package state;
 
 abstract public class State {
     public abstract String getState();
-    public abstract void book();
-    public abstract void checkin();
-    public abstract void unBook();
-    public abstract void checkout();
+    public abstract int book();
+    public abstract int checkin();
+    public abstract int unBook();
+    public abstract int checkout();
 }

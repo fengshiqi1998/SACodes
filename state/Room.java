@@ -12,22 +12,26 @@ public class Room {
     }
 
     public void book() {
-        s.book();
-        s = new BookState();
+        if(0 == s.book()) {
+            s = new BookState();
+        }
     }
 
     public void checkin() {
-        s.checkin();
-        s = new CheckinState();
+        if(0 == s.checkin()) {
+            s = new CheckinState();
+        }
     }
 
     public void unBook() {
-        s.unBook();
-        s = new FreeState();
+        if(0 == s.unBook()) {
+            s = new FreeState();
+        }
     }
 
     public void checkout() {
-        s.checkout();
-        s = new FreeState();
+        if(0 == s.checkout()) {
+            s = new FreeState();
+        }
     }
 }

@@ -15,11 +15,11 @@ public class Program {
 //        System.out.println(r.getState());
 
         r.book();
-//        r.checkout();
+        r.checkout();
         r.checkin();
 //        System.out.println(r.getState());
-//        r.book();
-//        r.unBook();
+        r.book();
+        r.unBook();
         r.checkout();
 //        System.out.println(r.getState());
     }

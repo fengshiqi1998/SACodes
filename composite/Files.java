@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Files extends Component {
-    List<Component> children = new ArrayList<>();
+    List<Component> children = new ArrayList<Component>();
     public Files(String name) {
         super(name);
     }

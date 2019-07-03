@@ -7,22 +7,26 @@ public class CheckinState extends State {
     }
 
     @Override
-    public void book() {
+    public int book() {
         System.out.println("当前状态为入住状态，无法进行预订操作");
+        return 1;
     }
 
     @Override
-    public void checkin() {
+    public int checkin() {
         System.out.println("当前状态为入住状态，无法进行入住操作");
+        return 1;
     }
 
     @Override
-    public void unBook() {
-        System.out.println("当前状态为入住状态，无法进行预订操作");
+    public int unBook() {
+        System.out.println("当前状态为入住状态，无法进行取消预订操作");
+        return 1;
     }
 
     @Override
-    public void checkout() {
+    public int checkout() {
         System.out.println("当前状态为入住状态，进行退房操作");
+        return 0;
     }
 }

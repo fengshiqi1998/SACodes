@@ -15,7 +15,7 @@ public class Teacher implements Subject {
     }
 
     public Teacher() {
-        stuList = new ArrayList<>();
+        stuList = new ArrayList<Observer>();
     }
 
     private ArrayList stuList;
