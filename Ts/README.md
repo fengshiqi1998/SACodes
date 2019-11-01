@@ -1,1 +1,1 @@
-# 设计模式的代码实现JavaScript版
+# 设计模式的代码实现TypeScript版

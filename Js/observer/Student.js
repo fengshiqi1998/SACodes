@@ -1,5 +1,6 @@
 var Student = /** @class */ (function () {
-    function Student() {
+    function Student(name) {
+        this.set_name(name);
     }
     Student.prototype.set_name = function (name) {
         this._name = name;

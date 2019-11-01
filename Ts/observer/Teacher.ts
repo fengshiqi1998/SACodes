@@ -15,7 +15,7 @@ class Teacher implements Subject {
     this.stuList.push(o);
   }
   removeObserver(o: Observer) {
-    this.stuList.filter(item => item !== o);
+    this.stuList = this.stuList.filter(item => item !== o);
   }
   notifyObserver() {
     this.stuList.forEach(item => {

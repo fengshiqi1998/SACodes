@@ -1,4 +1,4 @@
-package sigleton;
+package singleton;
 
 public class Singleton {
     // 使用静态私有全局变量保存唯一实例

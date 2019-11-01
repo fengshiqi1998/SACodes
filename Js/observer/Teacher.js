@@ -13,7 +13,7 @@ var Teacher = /** @class */ (function () {
         this.stuList.push(o);
     };
     Teacher.prototype.removeObserver = function (o) {
-        this.stuList.filter(function (item) { return item !== o; });
+        this.stuList = this.stuList.filter(function (item) { console.log(item !== o); return item !== o; });
     };
     Teacher.prototype.notifyObserver = function () {
         var _this = this;

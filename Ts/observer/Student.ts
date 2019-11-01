@@ -2,6 +2,10 @@ class Student implements Observer {
   private _name: String;
   private _tPhone: String;
 
+  constructor(name) {
+    this.set_name(name);
+  }
+
   public set_name(name: String): void {
     this._name = name;
   }

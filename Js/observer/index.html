@@ -17,8 +17,14 @@
     teacher.registerObserver(liLei);
     teacher.registerObserver(lianJie);
     teacher.registerObserver(wangZhao);
-
+    console.log(wangZhao === teacher.stuList[2]);
     teacher.set_phone("12345");
+    lianJie.show();
+    liLei.show();
+    wangZhao.show();
+
+    teacher.removeObserver(wangZhao);
+    teacher.set_phone("54321");
     lianJie.show();
     liLei.show();
     wangZhao.show();
